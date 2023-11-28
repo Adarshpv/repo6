@@ -1,0 +1,106 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #e8f1ec;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('sun.jpg');
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-position: center; /* Center the background image */
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    margin: 1em;
+    background-color: transparent;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+#locationSearch{
+    background-color: rgba(26, 18, 18, 0.7);
+
+}
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Result Section Styles */
+
+footer {
+    background-color: rgba(26, 18, 18, 0.7);
+    padding: 1em;
+    text-align: center;
+}
+
+.result-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.today-section, .tomorrow-section {
+    flex-basis: 45%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    background-color: rgba(26, 18, 18, 0.7);
+    padding: 1em;
+}
+
+a {
+    color: #3498db;
+}
+
+/* Media Queries for Tablet and Mobile Displays */
+
+@media only screen and (max-width: 768px) {
+    section {
+        margin: 0.5em;
+    }
+
+    .result-section {
+        flex-direction: column;
+    }
+
+    .today-section, .tomorrow-section {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    button {
+        width: 100%;
+    }
+}
